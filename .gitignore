@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .DS_Store
 data/raw/
+data/processed/scored_test_transactions.csv
+outputs/fraud_monitoring.db
