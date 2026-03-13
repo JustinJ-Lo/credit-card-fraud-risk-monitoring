@@ -1,0 +1,45 @@
+Financial Crimes Risk Monitoring - Alert Operations Summary
+===========================================================
+
+Control objective
+-----------------
+Flag potentially fraudulent credit card transactions for review while balancing fraud capture against false positive alert volume.
+
+Operational threshold selection
+-------------------------------
+Chosen alert threshold: 0.50
+Monitoring mode: Balanced
+Alerts generated: 119
+Frauds caught in alert queue: 98
+Precision: 0.8235
+Recall: 0.7967
+False positives: 21
+False negatives: 25
+
+The threshold was selected by requiring a minimum precision floor of 0.40, then choosing the best F1 among thresholds that cleared it. This avoids chasing recall at the cost of drowning analysts in false positives.
+
+Risk band interpretation
+------------------------
+Observed fraud rate in High band: 69.23%
+Observed fraud rate in Critical band: 92.50%
+Risk bands convert raw probabilities into operational triage categories, supporting queue prioritization and review routing.
+
+Rules baseline versus model
+---------------------------
+                method  alerts_generated  actual_frauds_caught  false_positives  false_negatives  precision   recall       f1  alert_rate
+  Rules-based baseline              1513                    42             1471               81   0.027759 0.341463 0.051345    0.021249
+Model @ threshold 0.50               119                    98               21               25   0.823529 0.796748 0.809917    0.001671
+
+The comparison matters because financial crime teams almost always have an existing rules engine. The model needs to justify itself against that baselinenot just against doing nothing. The table above shows how both approaches compare on fraud capture, queue volume, and false positive burden.
+
+SQL implementation note
+-----------------------
+The SQL monitoring layer in this project runs against a SQLite table created from the scored transaction output. In a real production environment, analysts would more likely query upstream transaction-monitoring or warehouse tables they don't directly control. The SQL layer here is used to simulate the downstream monitoring summaries and reporting logic that workflow would require.
+
+Forensic accounting tie-in
+--------------------------
+This workflow mirrors a forensic mindset to identify unusual patterns, surface transactions with multiple red flags, and translate those signals into a reviewable case queue. Similar to forensic accounting, the goal is not to treat anomalies as proof, but as evidence requiring structured investigation and documented escalation.
+
+Recommendation
+--------------
+At the selected threshold of 0.50 (Balanced mode), the model generated 119 high-risk alerts with an observed fraud hit rate of 82.35%. This supports an alert operations workflow where model scores, rule-based reasoning, and reporting outputs are used together to prioritize review. Teams prioritizing investigator efficiency can stay at this threshold; teams prioritizing maximum fraud capture should consider lowering it and accepting a higher false positive burden.

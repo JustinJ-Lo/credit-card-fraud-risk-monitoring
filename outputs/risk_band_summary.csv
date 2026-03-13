@@ -1,0 +1,5 @@
+risk_band,transactions,avg_fraud_probability,actual_frauds,fraud_rate,avg_amount
+Low,71032,0.014777,18,0.000253,88.78
+Medium,64,0.434492,13,0.203125,75.82
+High,26,0.811558,18,0.692308,82.49
+Critical,80,0.979583,74,0.925,70.71
