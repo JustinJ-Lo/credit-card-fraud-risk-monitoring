@@ -1,0 +1,13 @@
+alert_reason,alerts,actual_frauds,fraud_rate,avg_probability
+Critical model score | Multiple extreme PCA anomaly signals,42,39,0.9285714285714286,0.972112562270595
+Above high-risk monitoring threshold | Multiple extreme PCA anomaly signals,15,10,0.6666666666666666,0.79367110106549
+Critical model score | Elevated risk during off-hours proxy | Multiple extreme PCA anomaly signals,13,12,0.9230769230769231,0.9824724309221591
+Critical model score | Micro-transaction anomaly | Multiple extreme PCA anomaly signals,6,6,1.0,0.9725339199913634
+Above high-risk monitoring threshold | Elevated risk during off-hours proxy | Multiple extreme PCA anomaly signals,5,5,1.0,0.8503223151615324
+Multiple extreme PCA anomaly signals,5,2,0.4,0.5997663606567768
+Critical model score | High transaction amount | Elevated risk during off-hours proxy | Multiple extreme PCA anomaly signals,2,2,1.0,0.9870666388622307
+Routine monitoring flag,2,2,1.0,0.5504034414287543
+Above high-risk monitoring threshold | Micro-transaction anomaly | Elevated risk during off-hours proxy | Multiple extreme PCA anomaly signals,1,1,1.0,0.804235349326813
+Above high-risk monitoring threshold | Micro-transaction anomaly | Multiple extreme PCA anomaly signals,1,1,1.0,0.8710161361552821
+Above high-risk monitoring threshold | PCA anomaly pattern present,1,1,1.0,0.7639705093831058
+Critical model score | Very high transaction amount | Multiple extreme PCA anomaly signals,1,1,1.0,0.9068435266012951

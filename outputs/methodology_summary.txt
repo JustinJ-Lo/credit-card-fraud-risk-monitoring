@@ -1,0 +1,33 @@
+Fraud Monitoring Methodology Summary
+===================================
+
+Why this version is stronger
+---------------------------
+Feature cutoffs are fit on the training split only, the operational threshold is chosen on the validation split, and final performance is reported on a locked test split. That separation avoids the most common credibility problem in student fraud projects: choosing settings on the same data used for final reporting.
+
+Data splits
+-----------
+Train: 170,884 rows | fraud rate = 0.1726%
+Validation: 56,961 rows | fraud rate = 0.1720%
+Test: 56,962 rows | fraud rate = 0.1738%
+
+Training-derived feature cutoffs
+-------------------------------
+High amount cutoff (95th percentile): 364.53
+Very high amount cutoff (99th percentile): 1014.47
+Micro amount cutoff (5th percentile): 0.95
+
+Threshold selection
+-------------------
+Validation-selected operating threshold: 0.50 (Balanced)
+Final test reporting threshold: 0.50
+
+Validation metrics
+------------------
+ROC AUC: 0.9854
+PR AUC: 0.7680
+
+Test metrics
+------------
+ROC AUC: 0.9857
+PR AUC: 0.8516

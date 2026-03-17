@@ -1,0 +1,4 @@
+review_priority,risk_band,alerts,actual_frauds,avg_amount,avg_probability
+Immediate,Critical,64,60,98.34234375,0.9737038990879218
+Queue,Medium,7,4,44.94714285714286,0.5856626694487704
+Same Day,High,23,18,53.35608695652174,0.8085173950719657

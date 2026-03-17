@@ -1,20 +1,22 @@
-Credit Card Fraud Risk Monitoring - Model Summary
-=================================================
-Rows in full dataset: 284,807
-Train rows: 213,605
-Test rows: 71,202
-Fraud rate in full dataset: 0.1727%
-ROC AUC: 0.9862
-Average Precision (PR AUC): 0.8112
+Credit Card Fraud Detection - Results
+=====================================
 
-Classification Report at Default Threshold 0.50
------------------------------------------------
+Total rows: 284,807
+Train: 170,884 rows (fraud rate: 0.1726%)
+Val:   56,961 rows (fraud rate: 0.1720%)
+Test:  56,962 rows (fraud rate: 0.1738%)
+
+Threshold: 0.50 (Balanced) - selected on validation set
+Test ROC AUC: 0.9857
+Test PR AUC:  0.8516
+
+Classification Report
+--------------------
               precision    recall  f1-score   support
 
-           0     0.9996    0.9997    0.9997     71079
-           1     0.8235    0.7967    0.8099       123
+           0     0.9997    0.9998    0.9997     56863
+           1     0.8723    0.8283    0.8497        99
 
-    accuracy                         0.9994     71202
-   macro avg     0.9116    0.8982    0.9048     71202
-weighted avg     0.9993    0.9994    0.9993     71202
-
+    accuracy                         0.9995     56962
+   macro avg     0.9360    0.9140    0.9247     56962
+weighted avg     0.9995    0.9995    0.9995     56962
