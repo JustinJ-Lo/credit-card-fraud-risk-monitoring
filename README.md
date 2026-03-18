@@ -109,10 +109,10 @@ The validation sweep selected a **Balanced threshold of 0.50**. On the locked te
 
 | Metric | Value |
 |--------|-------|
-| Alerts generated | 119 |
-| Frauds caught | 98 |
-| Precision | 82.35% |
-| Recall | 79.67% |
+| Alerts generated | 94 |
+| Frauds caught | 82 |
+| Precision | 87.23% |
+| Recall | 82.83% |
 
 The rules baseline generated 1,513 alerts and caught 42 frauds at 2.78% precision. The model generated roughly 13x fewer alerts while catching more than twice as many actual fraud cases. Without the side-by-side, the model numbers look fine in isolation. Against the baseline, the improvement becomes concrete.
 
@@ -164,33 +164,26 @@ python src/train_fraud_model.py
 - `top_100_alerts_for_review.csv`
 
 **Reporting** (`outputs/`)
-- `threshold_analysis_validation.csv`
-- `threshold_analysis_test.csv`
-- `risk_band_summary.csv`
-- `rule_vs_model_comparison.csv`
-- `feature_importance.csv`
-- `sql_monitoring_summary.txt`
-- `model_summary.txt`
-- `methodology_summary.txt`
-- `fraud_monitoring.db`
-- `dashboard_queue_summary.csv`
-- `dashboard_alert_reason_summary.csv`
-- `dashboard_hourly_summary.csv`
-- `dashboard_threshold_validation.csv`
-- `dashboard_threshold_test.csv`
+- Threshold analysis for validation and test splits
+- Risk band summary
+- Rules vs. model comparison
+- Feature importances
+- SQL monitoring summary
+- Model and methodology summaries
+- SQLite database of scored transactions
+- Dashboard-ready CSVs for queue, alert reasons, and hourly breakdowns
 
 **Charts** (`outputs/charts/`)
-- `confusion_matrix.png`
-- `precision_recall_curve.png`
-- `threshold_tradeoff_validation.png`
-- `threshold_tradeoff_test.png`
-- `risk_band_fraud_rate.png`
+- Confusion matrix
+- Precision-recall curve
+- Threshold tradeoff charts
+- Fraud rate by risk band
 
 ---
 
 ## Stack
 
-Python (`pandas`, `NumPy`, `scikit-learn`, `matplotlib`) for feature engineering, modeling, scoring, and reporting; SQLite for downstream monitoring queries and alert summary generation.
+Python (pandas, NumPy, scikit-learn, matplotlib), SQLite
 
 ---
 
