@@ -1,0 +1,1827 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dashboard_threshold_validation' inline='true' name='federated.1d707151fnsbjn1az4m7o1f1aycg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dashboard_threshold_validation' name='textscan.1f85odk11r0uh1112l9qa13jh0iv'>
+            <connection class='textscan' directory='/Users/justinlo/Desktop/credit-card-fraud-analytics/outputs' filename='dashboard_threshold_validation.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1f85odk11r0uh1112l9qa13jh0iv' name='dashboard_threshold_validation.csv' table='[dashboard_threshold_validation#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='threshold' ordinal='0' />
+            <column datatype='string' name='monitoring_mode' ordinal='1' />
+            <column datatype='integer' name='alerts_generated' ordinal='2' />
+            <column datatype='real' name='alert_rate' ordinal='3' />
+            <column datatype='integer' name='actual_frauds_caught' ordinal='4' />
+            <column datatype='real' name='fraud_capture_rate' ordinal='5' />
+            <column datatype='integer' name='false_positives' ordinal='6' />
+            <column datatype='integer' name='false_negatives' ordinal='7' />
+            <column datatype='real' name='precision' ordinal='8' />
+            <column datatype='real' name='recall' ordinal='9' />
+            <column datatype='real' name='f1' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>threshold</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[threshold]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>threshold</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monitoring_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[monitoring_mode]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>monitoring_mode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alerts_generated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alerts_generated]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>alerts_generated</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alert_rate]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>alert_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_frauds_caught</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_frauds_caught]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>actual_frauds_caught</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_capture_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fraud_capture_rate]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>fraud_capture_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_positives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_positives]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>false_positives</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_negatives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_negatives]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>false_negatives</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>precision</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>recall</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[f1]</local-name>
+            <parent-name>[dashboard_threshold_validation.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='dashboard_threshold_validation.csv' datatype='table' name='[__tableau_internal_object_id__].[dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB]' role='measure' type='quantitative' />
+      <column caption='Actual Frauds Caught' datatype='integer' name='[actual_frauds_caught]' role='measure' type='quantitative' />
+      <column caption='Alert Rate' datatype='real' name='[alert_rate]' role='measure' type='quantitative' />
+      <column caption='Alerts Generated' datatype='integer' name='[alerts_generated]' role='measure' type='quantitative' />
+      <column caption='F1' datatype='real' name='[f1]' role='measure' type='quantitative' />
+      <column caption='False Negatives' datatype='integer' name='[false_negatives]' role='measure' type='quantitative' />
+      <column caption='False Positives' datatype='integer' name='[false_positives]' role='measure' type='quantitative' />
+      <column caption='Fraud Capture Rate' datatype='real' name='[fraud_capture_rate]' role='measure' type='quantitative' />
+      <column caption='Monitoring Mode' datatype='string' name='[monitoring_mode]' role='dimension' type='nominal' />
+      <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+      <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+      <column caption='Threshold' datatype='real' name='[threshold]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dashboard_threshold_validation.csv' id='dashboard_threshold_validation.csv_1E7A004A67864FF9B5E7C9E36BAF5EAB'>
+            <properties context=''>
+              <relation connection='textscan.1f85odk11r0uh1112l9qa13jh0iv' name='dashboard_threshold_validation.csv' table='[dashboard_threshold_validation#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='threshold' ordinal='0' />
+                  <column datatype='string' name='monitoring_mode' ordinal='1' />
+                  <column datatype='integer' name='alerts_generated' ordinal='2' />
+                  <column datatype='real' name='alert_rate' ordinal='3' />
+                  <column datatype='integer' name='actual_frauds_caught' ordinal='4' />
+                  <column datatype='real' name='fraud_capture_rate' ordinal='5' />
+                  <column datatype='integer' name='false_positives' ordinal='6' />
+                  <column datatype='integer' name='false_negatives' ordinal='7' />
+                  <column datatype='real' name='precision' ordinal='8' />
+                  <column datatype='real' name='recall' ordinal='9' />
+                  <column datatype='real' name='f1' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='dashboard_threshold_test' inline='true' name='federated.14b9rsj0n9mbyn0zy43ox01gmtmt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dashboard_threshold_test' name='textscan.0zvjdzr1vmlsgy1eswf7g0peibnj'>
+            <connection class='textscan' directory='/Users/justinlo/Desktop/credit-card-fraud-analytics/outputs' filename='dashboard_threshold_test.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0zvjdzr1vmlsgy1eswf7g0peibnj' name='dashboard_threshold_test.csv' table='[dashboard_threshold_test#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='threshold' ordinal='0' />
+            <column datatype='integer' name='alerts_generated' ordinal='1' />
+            <column datatype='real' name='alert_rate' ordinal='2' />
+            <column datatype='integer' name='frauds_caught' ordinal='3' />
+            <column datatype='real' name='fraud_capture_rate' ordinal='4' />
+            <column datatype='integer' name='false_positives' ordinal='5' />
+            <column datatype='integer' name='false_negatives' ordinal='6' />
+            <column datatype='real' name='precision' ordinal='7' />
+            <column datatype='real' name='recall' ordinal='8' />
+            <column datatype='real' name='f1' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>threshold</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[threshold]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>threshold</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alerts_generated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alerts_generated]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>alerts_generated</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alert_rate]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>alert_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frauds_caught</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[frauds_caught]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>frauds_caught</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_capture_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fraud_capture_rate]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>fraud_capture_rate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_positives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_positives]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>false_positives</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_negatives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_negatives]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>false_negatives</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>precision</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>recall</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[f1]</local-name>
+            <parent-name>[dashboard_threshold_test.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='dashboard_threshold_test.csv' datatype='table' name='[__tableau_internal_object_id__].[dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B]' role='measure' type='quantitative' />
+      <column caption='Alert Rate' datatype='real' name='[alert_rate]' role='measure' type='quantitative' />
+      <column caption='Alerts Generated' datatype='integer' name='[alerts_generated]' role='measure' type='quantitative' />
+      <column caption='F1' datatype='real' name='[f1]' role='measure' type='quantitative' />
+      <column caption='False Negatives' datatype='integer' name='[false_negatives]' role='measure' type='quantitative' />
+      <column caption='False Positives' datatype='integer' name='[false_positives]' role='measure' type='quantitative' />
+      <column caption='Fraud Capture Rate' datatype='real' name='[fraud_capture_rate]' role='measure' type='quantitative' />
+      <column caption='Frauds Caught' datatype='integer' name='[frauds_caught]' role='measure' type='quantitative' />
+      <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+      <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+      <column caption='Threshold' datatype='real' name='[threshold]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dashboard_threshold_test.csv' id='dashboard_threshold_test.csv_94908A15C22845F5932EE552076BFC9B'>
+            <properties context=''>
+              <relation connection='textscan.0zvjdzr1vmlsgy1eswf7g0peibnj' name='dashboard_threshold_test.csv' table='[dashboard_threshold_test#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='threshold' ordinal='0' />
+                  <column datatype='integer' name='alerts_generated' ordinal='1' />
+                  <column datatype='real' name='alert_rate' ordinal='2' />
+                  <column datatype='integer' name='frauds_caught' ordinal='3' />
+                  <column datatype='real' name='fraud_capture_rate' ordinal='4' />
+                  <column datatype='integer' name='false_positives' ordinal='5' />
+                  <column datatype='integer' name='false_negatives' ordinal='6' />
+                  <column datatype='real' name='precision' ordinal='7' />
+                  <column datatype='real' name='recall' ordinal='8' />
+                  <column datatype='real' name='f1' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='rule_vs_model_comparison' inline='true' name='federated.1uis8wq04oubya1e5bmrh0tf47mb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='rule_vs_model_comparison' name='textscan.18f4pm205ea6qv14lr4q01puj2pb'>
+            <connection class='textscan' directory='/Users/justinlo/Desktop/credit-card-fraud-analytics/outputs' filename='rule_vs_model_comparison.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18f4pm205ea6qv14lr4q01puj2pb' name='rule_vs_model_comparison.csv' table='[rule_vs_model_comparison#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='method' ordinal='0' />
+            <column datatype='integer' name='alerts_generated' ordinal='1' />
+            <column datatype='integer' name='actual_frauds_caught' ordinal='2' />
+            <column datatype='integer' name='false_positives' ordinal='3' />
+            <column datatype='integer' name='false_negatives' ordinal='4' />
+            <column datatype='real' name='precision' ordinal='5' />
+            <column datatype='real' name='recall' ordinal='6' />
+            <column datatype='real' name='f1' ordinal='7' />
+            <column datatype='real' name='alert_rate' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[method]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>method</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alerts_generated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alerts_generated]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>alerts_generated</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_frauds_caught</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_frauds_caught]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>actual_frauds_caught</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_positives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_positives]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>false_positives</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>false_negatives</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[false_negatives]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>false_negatives</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>precision</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>recall</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[f1]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>f1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alert_rate]</local-name>
+            <parent-name>[rule_vs_model_comparison.csv]</parent-name>
+            <remote-alias>alert_rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='rule_vs_model_comparison.csv' datatype='table' name='[__tableau_internal_object_id__].[rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6]' role='measure' type='quantitative' />
+      <column caption='Actual Frauds Caught' datatype='integer' name='[actual_frauds_caught]' role='measure' type='quantitative' />
+      <column caption='Alert Rate' datatype='real' name='[alert_rate]' role='measure' type='quantitative' />
+      <column caption='Alerts Generated' datatype='integer' name='[alerts_generated]' role='measure' type='quantitative' />
+      <column caption='F1' datatype='real' name='[f1]' role='measure' type='quantitative' />
+      <column caption='False Negatives' datatype='integer' name='[false_negatives]' role='measure' type='quantitative' />
+      <column caption='False Positives' datatype='integer' name='[false_positives]' role='measure' type='quantitative' />
+      <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+      <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+      <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='rule_vs_model_comparison.csv' id='rule_vs_model_comparison.csv_5701ABFC3DD6417DB096BA03F83741E6'>
+            <properties context=''>
+              <relation connection='textscan.18f4pm205ea6qv14lr4q01puj2pb' name='rule_vs_model_comparison.csv' table='[rule_vs_model_comparison#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='method' ordinal='0' />
+                  <column datatype='integer' name='alerts_generated' ordinal='1' />
+                  <column datatype='integer' name='actual_frauds_caught' ordinal='2' />
+                  <column datatype='integer' name='false_positives' ordinal='3' />
+                  <column datatype='integer' name='false_negatives' ordinal='4' />
+                  <column datatype='real' name='precision' ordinal='5' />
+                  <column datatype='real' name='recall' ordinal='6' />
+                  <column datatype='real' name='f1' ordinal='7' />
+                  <column datatype='real' name='alert_rate' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='high_risk_alert_queue' inline='true' name='federated.16rjrfn0n41gxr11iloal1c0s093' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='high_risk_alert_queue' name='textscan.0stzlzp0ffo6pq1a1mn3f0opd58v'>
+            <connection class='textscan' directory='/Users/justinlo/Desktop/credit-card-fraud-analytics/data/processed' filename='high_risk_alert_queue.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0stzlzp0ffo6pq1a1mn3f0opd58v' name='high_risk_alert_queue.csv' table='[high_risk_alert_queue#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='fraud_probability' ordinal='0' />
+            <column datatype='string' name='risk_band' ordinal='1' />
+            <column datatype='string' name='review_priority' ordinal='2' />
+            <column datatype='string' name='alert_reason' ordinal='3' />
+            <column datatype='string' name='recommended_action' ordinal='4' />
+            <column datatype='integer' name='actual_fraud' ordinal='5' />
+            <column datatype='real' name='Amount' ordinal='6' />
+            <column datatype='real' name='log_amount' ordinal='7' />
+            <column datatype='integer' name='is_high_amount' ordinal='8' />
+            <column datatype='integer' name='is_very_high_amount' ordinal='9' />
+            <column datatype='integer' name='is_micro_amount' ordinal='10' />
+            <column datatype='integer' name='is_night_proxy' ordinal='11' />
+            <column datatype='integer' name='extreme_v_count' ordinal='12' />
+            <column datatype='real' name='pca_anomaly_score' ordinal='13' />
+            <column datatype='real' name='Time' ordinal='14' />
+            <column datatype='real' name='hour_proxy' ordinal='15' />
+            <column datatype='real' name='V1' ordinal='16' />
+            <column datatype='real' name='V2' ordinal='17' />
+            <column datatype='real' name='V3' ordinal='18' />
+            <column datatype='real' name='V4' ordinal='19' />
+            <column datatype='real' name='V5' ordinal='20' />
+            <column datatype='real' name='V6' ordinal='21' />
+            <column datatype='real' name='V7' ordinal='22' />
+            <column datatype='real' name='V8' ordinal='23' />
+            <column datatype='real' name='V9' ordinal='24' />
+            <column datatype='real' name='V10' ordinal='25' />
+            <column datatype='real' name='V11' ordinal='26' />
+            <column datatype='real' name='V12' ordinal='27' />
+            <column datatype='real' name='V13' ordinal='28' />
+            <column datatype='real' name='V14' ordinal='29' />
+            <column datatype='real' name='V15' ordinal='30' />
+            <column datatype='real' name='V16' ordinal='31' />
+            <column datatype='real' name='V17' ordinal='32' />
+            <column datatype='real' name='V18' ordinal='33' />
+            <column datatype='real' name='V19' ordinal='34' />
+            <column datatype='real' name='V20' ordinal='35' />
+            <column datatype='real' name='V21' ordinal='36' />
+            <column datatype='real' name='V22' ordinal='37' />
+            <column datatype='real' name='V23' ordinal='38' />
+            <column datatype='real' name='V24' ordinal='39' />
+            <column datatype='real' name='V25' ordinal='40' />
+            <column datatype='real' name='V26' ordinal='41' />
+            <column datatype='real' name='V27' ordinal='42' />
+            <column datatype='real' name='V28' ordinal='43' />
+            <column datatype='integer' name='V1_extreme' ordinal='44' />
+            <column datatype='integer' name='V2_extreme' ordinal='45' />
+            <column datatype='integer' name='V3_extreme' ordinal='46' />
+            <column datatype='integer' name='V4_extreme' ordinal='47' />
+            <column datatype='integer' name='V5_extreme' ordinal='48' />
+            <column datatype='integer' name='V6_extreme' ordinal='49' />
+            <column datatype='integer' name='V7_extreme' ordinal='50' />
+            <column datatype='integer' name='V8_extreme' ordinal='51' />
+            <column datatype='integer' name='V9_extreme' ordinal='52' />
+            <column datatype='integer' name='V10_extreme' ordinal='53' />
+            <column datatype='integer' name='V11_extreme' ordinal='54' />
+            <column datatype='integer' name='V12_extreme' ordinal='55' />
+            <column datatype='integer' name='V13_extreme' ordinal='56' />
+            <column datatype='integer' name='V14_extreme' ordinal='57' />
+            <column datatype='integer' name='V15_extreme' ordinal='58' />
+            <column datatype='integer' name='V16_extreme' ordinal='59' />
+            <column datatype='integer' name='V17_extreme' ordinal='60' />
+            <column datatype='integer' name='V18_extreme' ordinal='61' />
+            <column datatype='integer' name='V19_extreme' ordinal='62' />
+            <column datatype='integer' name='V20_extreme' ordinal='63' />
+            <column datatype='integer' name='V21_extreme' ordinal='64' />
+            <column datatype='integer' name='V22_extreme' ordinal='65' />
+            <column datatype='integer' name='V23_extreme' ordinal='66' />
+            <column datatype='integer' name='V24_extreme' ordinal='67' />
+            <column datatype='integer' name='V25_extreme' ordinal='68' />
+            <column datatype='integer' name='V26_extreme' ordinal='69' />
+            <column datatype='integer' name='V27_extreme' ordinal='70' />
+            <column datatype='integer' name='V28_extreme' ordinal='71' />
+            <column datatype='integer' name='alert_flag' ordinal='72' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fraud_probability]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>fraud_probability</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risk_band]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>risk_band</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[review_priority]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>review_priority</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alert_reason]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>alert_reason</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommended_action</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recommended_action]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>recommended_action</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_fraud]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>actual_fraud</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>log_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[log_amount]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>log_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_high_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_high_amount]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>is_high_amount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_very_high_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_very_high_amount]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>is_very_high_amount</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_micro_amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_micro_amount]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>is_micro_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_night_proxy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_night_proxy]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>is_night_proxy</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extreme_v_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extreme_v_count]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>extreme_v_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pca_anomaly_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pca_anomaly_score]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>pca_anomaly_score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour_proxy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hour_proxy]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>hour_proxy</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V1]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V2]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V3]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V3</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V4]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V4</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V5]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V5</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V6]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V6</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V7]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V7</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V8]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V8</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V9]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V9</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V10]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V10</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V11</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V11]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V11</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V12]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V12</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V13</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V13]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V13</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V14]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V14</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V15</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V15]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V15</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V16</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V16]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V16</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V17</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V17]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V17</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V18</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V18]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V18</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V19</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V19]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V19</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V20</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V20]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V20</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V21</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V21]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V21</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V22</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V22]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V22</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V23</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V23]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V23</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V24</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V24]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V24</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V25</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V25]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V25</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V26</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V26]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V26</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V27</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V27]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V27</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V28</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V28]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V28</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V1_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V1_extreme</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V2_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V2_extreme</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V3_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V3_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V3_extreme</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V4_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V4_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V4_extreme</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V5_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V5_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V5_extreme</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V6_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V6_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V6_extreme</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V7_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V7_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V7_extreme</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V8_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V8_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V8_extreme</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V9_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V9_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V9_extreme</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V10_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V10_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V10_extreme</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V11_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V11_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V11_extreme</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V12_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V12_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V12_extreme</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V13_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V13_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V13_extreme</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V14_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V14_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V14_extreme</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V15_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V15_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V15_extreme</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V16_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V16_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V16_extreme</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V17_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V17_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V17_extreme</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V18_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V18_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V18_extreme</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V19_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V19_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V19_extreme</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V20_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V20_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V20_extreme</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V21_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V21_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V21_extreme</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V22_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V22_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V22_extreme</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V23_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V23_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V23_extreme</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V24_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V24_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V24_extreme</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V25_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V25_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V25_extreme</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V26_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V26_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V26_extreme</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V27_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V27_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V27_extreme</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V28_extreme</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V28_extreme]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>V28_extreme</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alert_flag]</local-name>
+            <parent-name>[high_risk_alert_queue.csv]</parent-name>
+            <remote-alias>alert_flag</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='V10 extreme' datatype='integer' name='[V10_extreme]' role='measure' type='quantitative' />
+      <column caption='V11 extreme' datatype='integer' name='[V11_extreme]' role='measure' type='quantitative' />
+      <column caption='V12 extreme' datatype='integer' name='[V12_extreme]' role='measure' type='quantitative' />
+      <column caption='V13 extreme' datatype='integer' name='[V13_extreme]' role='measure' type='quantitative' />
+      <column caption='V14 extreme' datatype='integer' name='[V14_extreme]' role='measure' type='quantitative' />
+      <column caption='V15 extreme' datatype='integer' name='[V15_extreme]' role='measure' type='quantitative' />
+      <column caption='V16 extreme' datatype='integer' name='[V16_extreme]' role='measure' type='quantitative' />
+      <column caption='V17 extreme' datatype='integer' name='[V17_extreme]' role='measure' type='quantitative' />
+      <column caption='V18 extreme' datatype='integer' name='[V18_extreme]' role='measure' type='quantitative' />
+      <column caption='V19 extreme' datatype='integer' name='[V19_extreme]' role='measure' type='quantitative' />
+      <column caption='V1 extreme' datatype='integer' name='[V1_extreme]' role='measure' type='quantitative' />
+      <column caption='V20 extreme' datatype='integer' name='[V20_extreme]' role='measure' type='quantitative' />
+      <column caption='V21 extreme' datatype='integer' name='[V21_extreme]' role='measure' type='quantitative' />
+      <column caption='V22 extreme' datatype='integer' name='[V22_extreme]' role='measure' type='quantitative' />
+      <column caption='V23 extreme' datatype='integer' name='[V23_extreme]' role='measure' type='quantitative' />
+      <column caption='V24 extreme' datatype='integer' name='[V24_extreme]' role='measure' type='quantitative' />
+      <column caption='V25 extreme' datatype='integer' name='[V25_extreme]' role='measure' type='quantitative' />
+      <column caption='V26 extreme' datatype='integer' name='[V26_extreme]' role='measure' type='quantitative' />
+      <column caption='V27 extreme' datatype='integer' name='[V27_extreme]' role='measure' type='quantitative' />
+      <column caption='V28 extreme' datatype='integer' name='[V28_extreme]' role='measure' type='quantitative' />
+      <column caption='V2 extreme' datatype='integer' name='[V2_extreme]' role='measure' type='quantitative' />
+      <column caption='V3 extreme' datatype='integer' name='[V3_extreme]' role='measure' type='quantitative' />
+      <column caption='V4 extreme' datatype='integer' name='[V4_extreme]' role='measure' type='quantitative' />
+      <column caption='V5 extreme' datatype='integer' name='[V5_extreme]' role='measure' type='quantitative' />
+      <column caption='V6 extreme' datatype='integer' name='[V6_extreme]' role='measure' type='quantitative' />
+      <column caption='V7 extreme' datatype='integer' name='[V7_extreme]' role='measure' type='quantitative' />
+      <column caption='V8 extreme' datatype='integer' name='[V8_extreme]' role='measure' type='quantitative' />
+      <column caption='V9 extreme' datatype='integer' name='[V9_extreme]' role='measure' type='quantitative' />
+      <column caption='high_risk_alert_queue.csv' datatype='table' name='[__tableau_internal_object_id__].[high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C]' role='measure' type='quantitative' />
+      <column caption='Actual Fraud' datatype='integer' name='[actual_fraud]' role='measure' type='quantitative' />
+      <column caption='Alert Flag' datatype='integer' name='[alert_flag]' role='measure' type='quantitative' />
+      <column caption='Alert Reason' datatype='string' name='[alert_reason]' role='dimension' type='nominal' />
+      <column caption='Extreme V Count' datatype='integer' name='[extreme_v_count]' role='measure' type='quantitative' />
+      <column caption='Fraud Probability' datatype='real' name='[fraud_probability]' role='measure' type='quantitative' />
+      <column caption='Hour Proxy' datatype='real' name='[hour_proxy]' role='measure' type='quantitative' />
+      <column caption='Is High Amount' datatype='integer' name='[is_high_amount]' role='measure' type='quantitative' />
+      <column caption='Is Micro Amount' datatype='integer' name='[is_micro_amount]' role='measure' type='quantitative' />
+      <column caption='Is Night Proxy' datatype='integer' name='[is_night_proxy]' role='measure' type='quantitative' />
+      <column caption='Is Very High Amount' datatype='integer' name='[is_very_high_amount]' role='measure' type='quantitative' />
+      <column caption='Log Amount' datatype='real' name='[log_amount]' role='measure' type='quantitative' />
+      <column caption='Pca Anomaly Score' datatype='real' name='[pca_anomaly_score]' role='measure' type='quantitative' />
+      <column caption='Recommended Action' datatype='string' name='[recommended_action]' role='dimension' type='nominal' />
+      <column caption='Review Priority' datatype='string' name='[review_priority]' role='dimension' type='nominal' />
+      <column caption='Risk Band' datatype='string' name='[risk_band]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='high_risk_alert_queue.csv' id='high_risk_alert_queue.csv_CEB0574F87844137A8FC04AA436B674C'>
+            <properties context=''>
+              <relation connection='textscan.0stzlzp0ffo6pq1a1mn3f0opd58v' name='high_risk_alert_queue.csv' table='[high_risk_alert_queue#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='fraud_probability' ordinal='0' />
+                  <column datatype='string' name='risk_band' ordinal='1' />
+                  <column datatype='string' name='review_priority' ordinal='2' />
+                  <column datatype='string' name='alert_reason' ordinal='3' />
+                  <column datatype='string' name='recommended_action' ordinal='4' />
+                  <column datatype='integer' name='actual_fraud' ordinal='5' />
+                  <column datatype='real' name='Amount' ordinal='6' />
+                  <column datatype='real' name='log_amount' ordinal='7' />
+                  <column datatype='integer' name='is_high_amount' ordinal='8' />
+                  <column datatype='integer' name='is_very_high_amount' ordinal='9' />
+                  <column datatype='integer' name='is_micro_amount' ordinal='10' />
+                  <column datatype='integer' name='is_night_proxy' ordinal='11' />
+                  <column datatype='integer' name='extreme_v_count' ordinal='12' />
+                  <column datatype='real' name='pca_anomaly_score' ordinal='13' />
+                  <column datatype='real' name='Time' ordinal='14' />
+                  <column datatype='real' name='hour_proxy' ordinal='15' />
+                  <column datatype='real' name='V1' ordinal='16' />
+                  <column datatype='real' name='V2' ordinal='17' />
+                  <column datatype='real' name='V3' ordinal='18' />
+                  <column datatype='real' name='V4' ordinal='19' />
+                  <column datatype='real' name='V5' ordinal='20' />
+                  <column datatype='real' name='V6' ordinal='21' />
+                  <column datatype='real' name='V7' ordinal='22' />
+                  <column datatype='real' name='V8' ordinal='23' />
+                  <column datatype='real' name='V9' ordinal='24' />
+                  <column datatype='real' name='V10' ordinal='25' />
+                  <column datatype='real' name='V11' ordinal='26' />
+                  <column datatype='real' name='V12' ordinal='27' />
+                  <column datatype='real' name='V13' ordinal='28' />
+                  <column datatype='real' name='V14' ordinal='29' />
+                  <column datatype='real' name='V15' ordinal='30' />
+                  <column datatype='real' name='V16' ordinal='31' />
+                  <column datatype='real' name='V17' ordinal='32' />
+                  <column datatype='real' name='V18' ordinal='33' />
+                  <column datatype='real' name='V19' ordinal='34' />
+                  <column datatype='real' name='V20' ordinal='35' />
+                  <column datatype='real' name='V21' ordinal='36' />
+                  <column datatype='real' name='V22' ordinal='37' />
+                  <column datatype='real' name='V23' ordinal='38' />
+                  <column datatype='real' name='V24' ordinal='39' />
+                  <column datatype='real' name='V25' ordinal='40' />
+                  <column datatype='real' name='V26' ordinal='41' />
+                  <column datatype='real' name='V27' ordinal='42' />
+                  <column datatype='real' name='V28' ordinal='43' />
+                  <column datatype='integer' name='V1_extreme' ordinal='44' />
+                  <column datatype='integer' name='V2_extreme' ordinal='45' />
+                  <column datatype='integer' name='V3_extreme' ordinal='46' />
+                  <column datatype='integer' name='V4_extreme' ordinal='47' />
+                  <column datatype='integer' name='V5_extreme' ordinal='48' />
+                  <column datatype='integer' name='V6_extreme' ordinal='49' />
+                  <column datatype='integer' name='V7_extreme' ordinal='50' />
+                  <column datatype='integer' name='V8_extreme' ordinal='51' />
+                  <column datatype='integer' name='V9_extreme' ordinal='52' />
+                  <column datatype='integer' name='V10_extreme' ordinal='53' />
+                  <column datatype='integer' name='V11_extreme' ordinal='54' />
+                  <column datatype='integer' name='V12_extreme' ordinal='55' />
+                  <column datatype='integer' name='V13_extreme' ordinal='56' />
+                  <column datatype='integer' name='V14_extreme' ordinal='57' />
+                  <column datatype='integer' name='V15_extreme' ordinal='58' />
+                  <column datatype='integer' name='V16_extreme' ordinal='59' />
+                  <column datatype='integer' name='V17_extreme' ordinal='60' />
+                  <column datatype='integer' name='V18_extreme' ordinal='61' />
+                  <column datatype='integer' name='V19_extreme' ordinal='62' />
+                  <column datatype='integer' name='V20_extreme' ordinal='63' />
+                  <column datatype='integer' name='V21_extreme' ordinal='64' />
+                  <column datatype='integer' name='V22_extreme' ordinal='65' />
+                  <column datatype='integer' name='V23_extreme' ordinal='66' />
+                  <column datatype='integer' name='V24_extreme' ordinal='67' />
+                  <column datatype='integer' name='V25_extreme' ordinal='68' />
+                  <column datatype='integer' name='V26_extreme' ordinal='69' />
+                  <column datatype='integer' name='V27_extreme' ordinal='70' />
+                  <column datatype='integer' name='V28_extreme' ordinal='71' />
+                  <column datatype='integer' name='alert_flag' ordinal='72' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5D045920-B35C-4628-8F0C-97176632DBFB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{80F7C3A4-5FBD-4963-B047-E9BD18CB5E26}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

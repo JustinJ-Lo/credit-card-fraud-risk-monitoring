@@ -6,6 +6,14 @@ So I built the layer between the model and the analyst. The goal was to simulate
 
 ---
 
+## Dashboard Preview
+
+![Fraud Monitoring and Alert Triage Dashboard](images/Fraud_Monitoring_Dashboard.png)
+
+Dashboard preview showing validation-based threshold selection, rules-versus-model comparison, and a high-risk alert queue. At the selected 0.50 threshold, the model generated 94 alerts, caught 82 fraud cases, and achieved 87.23% precision with 82.83% recall on the held-out test set.
+
+---
+
 ## Dataset
 
 I used the [Credit Card Fraud Detection dataset from Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud). Key columns:
